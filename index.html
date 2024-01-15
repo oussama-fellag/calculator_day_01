@@ -5,8 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Calculator</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
+    <div class="calculator">
+        <h1 class="title">Calculatrice Simple</h1>
+        <img src="https://img.freepik.com/vecteurs-premium/calculatrice-argent-ligne-logo-vecteur-icone-symbole-conception-graphique-illustration_15473-791.jpg" alt="Calculator Logo" class="logo">
+
+        
+        <!-- Calculator content as before -->
+    </div>
+    <input type="range" id="darknessSlider" min="0" max="100" value="0" oninput="adjustDarkness()">
+    <div class="mode-switch" onclick="toggleMode()">🌙</div>
+    <div class="mode-switch" onclick="toggleMode()">🌙</div>
     <div class="calculator">
         <input class="display" type="text" readonly>
         <button class="operator" onclick="clearDisplay()">C</button>

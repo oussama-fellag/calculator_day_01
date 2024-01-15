@@ -19,3 +19,15 @@ function calculateResult() {
         display.value = 'Error';
     }
 }
+
+
+function adjustDarkness() {
+    const darknessValue = document.getElementById('darknessSlider').value;
+    document.body.style.backgroundColor = `rgba(0, 0, 0, ${darknessValue / 100})`;
+}
+
+// Add a function to toggle dark mode
+function toggleMode() {
+    document.body.classList.toggle('dark-mode');
+    adjustDarkness(); // Adjust darkness when toggling dark mode
+}
